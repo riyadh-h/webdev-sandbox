@@ -92,6 +92,16 @@
                 background: linear-gradient(90deg, red, blue);
             }
 
+            .yellow-black-stripes {
+                background: repeating-linear-gradient(
+                    90deg,
+                    yellow 0px,
+                    yellow 10px,
+                    black 10px,
+                    black 20px
+                );
+            }
+
             /* Styling for elements with an ID.
                Note that if an element is styled using both a class and
                an ID, the ID styling takes precedence in common
@@ -166,7 +176,7 @@
 
             <h2 id="colored-boxes">Colored Boxes</h2>
             <div class="box red-blue-gradient"></div>
-            <div class="box"></div>
+            <div class="box yellow-black-stripes"></div>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
