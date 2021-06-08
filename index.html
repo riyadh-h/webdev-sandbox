@@ -40,6 +40,8 @@
                 color: darkblue !important;
             }
 
+            
+
             .blue-dashed-border {
                 border-color: blue;
                 border-style: dashed;
@@ -64,6 +66,33 @@
                 width: 100px;
                 height: 100px;
                 display: inline-block;
+            }
+
+            /* Animations; see @keyframes below. */
+            .anim {
+                animation-name: bcg;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes bcg {
+                0% {
+                    background-color: #00f;
+                }
+                25% {
+                    background-color: #0ff;
+                }
+                50% {
+                    background-color: #0f0;
+                }
+                75% {
+                    background-color: #0ff;
+                }
+                100% {
+                    background-color: #00f;
+                }
             }
 
             .image-background {
@@ -186,7 +215,7 @@
             <div class="box" style="transform: skewX(-15deg);"></div>
             <div class="box"></div>
             <div class="box"></div>
-            <div class="box" style="position: relative; left: 50px; transform: scale(2);"></div>
+            <div class="anim box" style="position: relative; left: 50px; transform: scale(2);"></div>
 
             <h2 id="fcc-milestones">freeCodeCamp.org Milestones</h2>
             <ol class="image-background">
