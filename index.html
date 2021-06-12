@@ -68,6 +68,10 @@
                 display: inline-block;
             }
 
+            .box:focus {
+                background: linear-gradient(90deg, yellow, green);
+            }
+
             /* Animations; see @keyframes below. */
             .anim {
                 animation-name: bcg;
@@ -218,10 +222,10 @@
             <div class="box red-blue-gradient"></div>
             <div class="box yellow-black-stripes"></div>
             <!-- Also check skewY function -->
-            <div class="box" style="transform: skewX(15deg);"></div>
-            <div class="box" style="transform: skewX(-15deg);"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box" tabindex="0" style="transform: skewX(15deg);"></div>
+            <div class="box" tabindex="0" style="transform: skewX(-15deg);"></div>
+            <div class="box" tabindex="0"></div>
+            <div class="box" tabindex="0"></div>
             <div class="anim box" style="position: relative; left: 50px; transform: scale(2);"></div>
 
             <h2 id="audio">Audio</h2>
