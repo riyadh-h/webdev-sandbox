@@ -40,8 +40,6 @@
                 color: darkblue !important;
             }
 
-            
-
             .blue-dashed-border {
                 border-color: blue;
                 border-style: dashed;
@@ -70,6 +68,14 @@
 
             .box:focus {
                 background: linear-gradient(90deg, yellow, green);
+            }
+
+            .boxes-container {
+                display: flex;
+                flex-direction: row; /* default; try 'column' instead. */
+                justify-content: space-evenly;
+                /* also check align-items */
+
             }
 
             /* Animations; see @keyframes below. */
@@ -229,14 +235,16 @@
             </form>
 
             <h2 id="colored-boxes">Colored Boxes</h2>
-            <div class="box red-blue-gradient"></div>
-            <div class="box yellow-black-stripes"></div>
-            <!-- Also check skewY function -->
-            <div class="box" tabindex="0" style="transform: skewX(15deg);"></div>
-            <div class="box" tabindex="0" style="transform: skewX(-15deg);"></div>
-            <div class="box" tabindex="0"></div>
-            <div class="box" tabindex="0"></div>
-            <div class="anim box" style="position: relative; left: 50px; transform: scale(2);"></div>
+            <div class="boxes-container">
+                <div class="box red-blue-gradient"></div>
+                <div class="box yellow-black-stripes"></div>
+                <!-- Also check skewY function -->
+                <div class="box" tabindex="0" style="transform: skewX(15deg);"></div>
+                <div class="box" tabindex="0" style="transform: skewX(-15deg);"></div>
+                <div class="box" tabindex="0"></div>
+                <div class="box" tabindex="0"></div>
+                <div class="anim box" style="position: relative; left: 50px; transform: scale(2);"></div>
+            </div>
 
             <h2 id="audio">Audio</h2>
             <audio controls>
